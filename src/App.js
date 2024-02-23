@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './components/Home';
+import Layout from './components/Layout';
+import Translate from './components/Translate/Translate'
+import CheckerDemo from './components/GrammerCheck/CheckerDemo'
+import ContactUs from './components/ContactUs';
+import AboutUs from './components/AboutUs';
+import Dictionary from './components/Dictionary/Dictionary';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return(
+
+<BrowserRouter>
+<Routes>
+  <Route path="/" element={<Layout/>}>
+    <Route index element={<Home />} />
+    <Route path="dictionary" element={<Dictionary/>} />
+    <Route path="translator" element={<Translate/>}/>
+    <Route path= "grammerCheck" element={<CheckerDemo/>}/>
+    <Route path="contactUs" element={<ContactUs/>}/>
+    <Route path="aboutUs" element={<AboutUs/>}/>
+    
+  </Route>
+</Routes>
+</BrowserRouter>
   );
 }
 
