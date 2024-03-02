@@ -1,4 +1,6 @@
 # Getting Started with Create React App
+![1](https://github.com/samithadev/SAHA-sinhala-english-disctionary-frontend/assets/89331663/b79c9cb9-bacc-4893-b72c-65556f18f297)
+![2](https://github.com/samithadev/SAHA-sinhala-english-disctionary-frontend/assets/89331663/9f1ffc12-afea-4f31-be71-a28baf14280c)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
